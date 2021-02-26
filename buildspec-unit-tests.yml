@@ -1,12 +1,14 @@
 version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - echo Running gradle clean task
-      - aws --version
-      - gradle clean
   build:
     commands:
       - echo Running gradle test task
       - gradle test
+      - echo $(pwd)
+      - echo $(ls)
+reports: #New
+  junit-reports: # CodeBuild will create a report group called "SurefireReports".
+    files: #Store all of the files
+      - '**/*'
+    base-directory: 'build/test-results/test/' # Location of the reports

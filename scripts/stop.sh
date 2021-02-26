@@ -1,1 +1,1 @@
-
+docker stop cloud-training

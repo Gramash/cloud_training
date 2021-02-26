@@ -11,7 +11,7 @@ class HealthCheckController {
 
     @GetMapping("/health-check")
     fun healthCheck(): String {
-        return getProp("test")
+        return getProp("hello.message")
     }
 
 }
