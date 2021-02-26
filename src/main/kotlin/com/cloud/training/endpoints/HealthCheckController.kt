@@ -1,5 +1,6 @@
 package com.cloud.training.endpoints
 
+import com.cloud.training.functions.getProp
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
@@ -10,7 +11,7 @@ class HealthCheckController {
 
     @GetMapping("/health-check")
     fun healthCheck(): String {
-        return "Hello Cloud World"
+        return getProp("hello.message")
     }
 
 }
