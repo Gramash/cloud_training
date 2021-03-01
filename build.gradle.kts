@@ -24,6 +24,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("com.ninja-squad:springmockk:1.1.3")
+    testImplementation("org.assertj:assertj-core:3.7.0")
 }
 
 tasks.withType<KotlinCompile> {
