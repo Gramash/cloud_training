@@ -1,4 +1,4 @@
-package com.cloud.training.endpoints
+package com.cloud.training.api.controller
 
 import com.cloud.training.functions.getProp
 import org.springframework.web.bind.annotation.GetMapping
