@@ -10,6 +10,6 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 class WSConfig : WebSocketConfigurer {
     override fun registerWebSocketHandlers(registry: WebSocketHandlerRegistry) {
         registry.addHandler(ChatHandler(), "/chat")
-                .setAllowedOrigins("https://ec2-100-25-134-161.compute-1.amazonaws.com:4200")
+                .setAllowedOrigins("http://ec2-100-25-134-161.compute-1.amazonaws.com:4200")
     }
 }
