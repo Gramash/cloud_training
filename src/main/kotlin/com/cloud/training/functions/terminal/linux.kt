@@ -6,7 +6,7 @@ import java.lang.StringBuilder
 
 fun execReal(): StringBuilder {
     val runtime = Runtime.getRuntime()
-    val process = runtime.exec("./scripts/collectSysData.sh")
+    val process = runtime.exec("app/scripts/collectSysData.sh")
     val reader = BufferedReader(InputStreamReader(process.inputStream))
     var line: String?
     val builder = StringBuilder()
